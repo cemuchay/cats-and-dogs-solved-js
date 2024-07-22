@@ -2,12 +2,12 @@ const prompt = require('prompt-sync')();
 
 //ask for T
 
-const T = parseFloat(prompt('Enter Number of Test Cases: '))
+const T = parseInt(prompt('Enter Number of Test Cases: '))
 
 if (T < 1 || T > 105) {
     console.log("invalid value")
 }
-
+else {
 for (i = 0; i < T; i++) {
 
     //ask for C, D, L
@@ -31,6 +31,7 @@ for (i = 0; i < T; i++) {
     else {
         console.log('yes')
     }
+}
 }
 
 
